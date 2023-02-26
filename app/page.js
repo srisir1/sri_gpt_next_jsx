@@ -1,91 +1,48 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import { BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/outline'
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+   <>
+    <div className='text-white flex  flex-col items-center justify-center h-screen'>
+            <h1 className='text-5xl text-bold mb-20'>SriSir_Gpt</h1>
+
+            <div className='flex space-x-2 text-center'>
+                <div>
+                    <div className='flex flex-col justify-center items-center mb-5'>
+                        <SunIcon className="h-8 w-8 " />
+                        <h2>Example </h2>
+                    </div>
+                    <div className='space-y-2'>
+                        <p className='infoTech'>"Explain quantum computing in simple terms" →</p>
+                        <p className='infoTech'>Got any creative ideas for a 10 year old's birthday?</p>
+                        <p className='infoTech'>How do I make an HTTP request in Javascript?</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div className='flex flex-col justify-center items-center mb-5'>
+                        <BoltIcon className="h-8 w-8 " />
+                        <h2>Capabilities </h2>
+                    </div>
+                    <div className='space-y-2'>
+                        <p className='infoTech'>Remembers what user said earlier in the conversation</p>
+                        <p className='infoTech'>Allows user to provide follow-up corrections</p>
+                        <p className='infoTech'>Trained to decline inappropriate requests</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div className='flex flex-col justify-center items-center mb-5'>
+                        <ExclamationTriangleIcon className="h-8 w-8 " />
+                        <h2>Limitations </h2>
+                    </div>
+                    <div className='space-y-2'>
+                        <p className='infoTech'>May occasionally generate incorrect information</p>
+                        <p className='infoTech'>May occasionally produce harmful instructions or biased content</p>
+                        <p className='infoTech'>Limited knowledge of world and events after 2021</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+   </>
   )
 }
