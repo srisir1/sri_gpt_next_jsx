@@ -1,7 +1,7 @@
 'use client'
 import { signIn } from "next-auth/react";
 import Image from "next/image";
-import img1 from '../images/img3.png'
+import img1 from '../images/img3.png';
 
 const Login = () => {
     return (
@@ -20,6 +20,7 @@ const Login = () => {
                     className="text-white text-3xl font-bold animate-pulse"
                 >Sign in to use SriSir_Gpt</button>
             </div>
+
         </>
     )
 }
