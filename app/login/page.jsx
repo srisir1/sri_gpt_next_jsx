@@ -6,7 +6,6 @@ import Login from '../../components/Login'
 
 const LoginPage = () => {
   const { data: session } = useSession();
-  console.log(session);
   return (
     <>
       {!session ? (

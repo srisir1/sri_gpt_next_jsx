@@ -36,9 +36,15 @@ const Sidebar = () => {
                                 </div>
                             )}
                         </div>
-                        <Link className="text-white text-center" href={'/login'}>
-                            <button className="px-5 py-2 rounded-sm bg-slate-50 text-black">Login</button>
-                        </Link>
+                        <div className="text-center">
+                            <Link className="text-center px-5 py-2 mx-2 rounded-sm bg-slate-50 text-black" href={'/login'}>
+                                Login
+                            </Link>
+
+                            <Link className="text-center px-5 py-2 rounded-sm bg-slate-50 text-black" href={'/'}>
+                                Home
+                            </Link>
+                        </div>
                     </>
 
                 ) : (<>
